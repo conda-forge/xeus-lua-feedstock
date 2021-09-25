@@ -1,6 +1,6 @@
 {% set name = "xeus-lua" %}
-{% set version = "0.5.5" %}
-{% set sha256 = "ef132b7a764924429ba8c7b8d63eb2e187e24ca1986b240d4c0d0bced5951d1e" %}
+{% set version = "0.5.6" %}
+{% set sha256 = "f09d8b12c818059b95e454dfe0fd939319fd1bbd330682d9a2414924a4169668" %}
 
 package:
   name: {{ name|lower }}
@@ -26,8 +26,7 @@ requirements:
     - lua >=5.2.0
     - xeus >=2.0
     - xtl >=0.7
-    - xwidgets >=0.26.0
-    - openlibm >=0.6.0
+    - xwidgets >=0.26.1
 
 test:
   commands:
