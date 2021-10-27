@@ -1,6 +1,8 @@
 {% set name = "xeus-lua" %}
-{% set version = "0.5.10" %}
-{% set sha256 = "c17391456eeff98a801bb380dce89b3ba4a9d5fb1aa31045a6d1f1b1b0de18ce" %}
+
+{% set version = "0.6.0" %}
+{% set sha256 = "da2f902a9f8c2513ef503bd3488c7fe9fbb74f1ce4eb46c3f4272ba1208d7cc3" %}
+
 
 package:
   name: {{ name|lower }}
@@ -23,10 +25,11 @@ requirements:
     - cppzmq >=4.6.0,<5
     - zeromq
     - openlibm  # [linux]
-    - lua >=5.2.0
-    - xeus >=2.0
-    - xtl >=0.7
-    - xwidgets >=0.26.1
+    - lua >=5.2.0,<6
+    - xeus >=2.0,<3
+    - xtl >=0.7,<1
+    - xwidgets >=0.26.1,<1
+    - xcanvas >=0.2.1,<1
 
 test:
   commands:
