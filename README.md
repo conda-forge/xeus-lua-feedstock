@@ -183,5 +183,6 @@ Feedstock Maintainers
 =====================
 
 * [@DerThorsten](https://github.com/DerThorsten/)
+* [@JohanMabille](https://github.com/JohanMabille/)
 * [@SylvainCorlay](https://github.com/SylvainCorlay/)
 
