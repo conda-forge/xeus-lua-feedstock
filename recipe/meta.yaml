@@ -1,7 +1,7 @@
 {% set name = "xeus-lua" %}
 
-{% set version = "0.7.2" %}
-{% set sha256 = "8dff0e71e0d674fa8734db036c0499a85c7db953fd96eef239104245a3a47e54" %}
+{% set version = "0.7.3" %}
+{% set sha256 = "f0f8e465daacb5ae13572999374a8a785486ea7bcc83fe10c11254099eb31d37" %}
 
 package:
   name: {{ name|lower }}
