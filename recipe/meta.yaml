@@ -1,7 +1,5 @@
 {% set name = "xeus-lua" %}
-
-{% set version = "0.7.4" %}
-{% set sha256 = "9f64a235cb59dccf1c972368145b13198870a8dbaf4311eac4e00af50f3c219b" %}
+{% set version = "0.7.5" %}
 
 package:
   name: {{ name|lower }}
@@ -10,7 +8,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://github.com/jupyter-xeus/xeus-lua/archive/{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  sha256: 4d6ffc573d4a8202496f01e1bd4c3da4d4bd9c850c741a1970664c791a5eb9e1
 
 build:
   number: 0
