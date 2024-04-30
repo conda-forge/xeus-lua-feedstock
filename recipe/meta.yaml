@@ -23,6 +23,8 @@ requirements:
     - lua >=5.2.0,<6
     - xeus-zmq >=1.0.2,<2
     - xtl >=0.7,<0.8
+    # TODO remove this when xwidgets run constraints is fixed
+    - nlohmann_json =3.11.2
     - xwidgets >=0.27.3,<0.29
     - xcanvas >=0.4.2,<0.5
 
