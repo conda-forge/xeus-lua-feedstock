@@ -11,7 +11,7 @@ source:
   sha256: 4d6ffc573d4a8202496f01e1bd4c3da4d4bd9c850c741a1970664c791a5eb9e1
 
 build:
-  number: 0
+  number: 1
 
 requirements:
   build:
@@ -23,8 +23,8 @@ requirements:
     - lua >=5.2.0,<6
     - xeus-zmq >=1.0.2,<2
     - xtl >=0.7,<0.8
-    - xwidgets >=0.27.3,<0.28
-    - xcanvas >=0.4.0,<0.5
+    - xwidgets >=0.27.3,<0.29
+    - xcanvas >=0.4.2,<0.5
 
 test:
   commands:
