@@ -1,5 +1,5 @@
 {% set name = "xeus-lua" %}
-{% set version = "0.7.5" %}
+{% set version = "0.7.6" %}
 
 package:
   name: {{ name|lower }}
@@ -8,21 +8,21 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://github.com/jupyter-xeus/xeus-lua/archive/{{ version }}.tar.gz
-  sha256: 4d6ffc573d4a8202496f01e1bd4c3da4d4bd9c850c741a1970664c791a5eb9e1
+  sha256: 583616068bd40607323346379327a7bb395f1abacd14dc352d706de58ed33954
 
 build:
-  number: 1
+  number: 0
 
 requirements:
   build:
     - {{ compiler('cxx') }}
+    - {{ stdlib('c') }}
     - cmake
     - make  # [unix]
   host:
     - openlibm  # [linux]
     - lua >=5.2.0,<6
-    - xeus-zmq >=1.0.2,<2
-    - xtl >=0.7,<0.8
+    - xeus-zmq >=3.0.0,<4
     # TODO remove this when xwidgets run constraints is fixed
     - nlohmann_json =3.11.2
     - xwidgets >=0.27.3,<0.29
