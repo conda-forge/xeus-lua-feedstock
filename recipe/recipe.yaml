@@ -1,5 +1,5 @@
 context:
-  version: "0.8.0"
+  version: "0.9.0"
   build_number: 0
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/jupyter-xeus/xeus-lua/archive/${{ version }}.tar.gz
-  sha256: f5ac9fd25ceb68d62fa8327125af271ca49b37d9539f55e7e2f5938d2d32a75c
+  sha256: 96bc65272e0140c6de0894f5243f1393dfe7d8e9e847eb624cb6a5ed00de9fe2
 
 build:
   number: ${{ build_number }}
@@ -25,11 +25,11 @@ requirements:
     - if: linux
       then:
         - openlibm
-    - lua >=5.2.0,<6
-    - xeus-zmq >=3.0.0,<4
+    - lua >=5.2.0,<5.5
+    - xeus-zmq >=4.0.0,<5
     - nlohmann_json
-    - xwidgets >=0.29.2,<0.30
-    - xcanvas >=0.6.1,<0.7
+    - xwidgets >=0.30,<0.31
+    - xcanvas >=0.7,<0.8
 
 tests:
   - package_contents:
